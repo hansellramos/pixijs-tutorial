@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <style>
+        body { margin: 0; box-sizing: border-box; }
+    </style>
+</head>
+<script src="node_modules/pixi.js/dist/pixi.js"></script>
+<body>
+<script type="text/javascript">
+    //Aliases
+    var Container = PIXI.Container,
+        autoDetectRenderer = PIXI.autoDetectRenderer,
+        loader = PIXI.loader,
+        resources = PIXI.loader.resources,
+        Sprite = PIXI.Sprite;
+
+    //Create a Pixi stage and renderer and add the
+    //renderer.view to the DOM
+    var stage = new Container(),
+        renderer = autoDetectRenderer(512, 512);
+
+    renderer.backgroundColor = "0xffeeff";
+    document.body.appendChild(renderer.view);
+
+    var rocket;
+
+    //load an image and run the `setup` function when it's done
+    loader
+        .add("images/09.png")
+        .load(setup);
+
+    function setup() {
+
+        var texture = PIXI.utils.TextureCache["images/09.png"];
+
+        var rectangle = new PIXI.Rectangle(96, 64, 32, 32);
+
+        texture.frame = rectangle;
+
+        rocket = new Sprite(texture);
+
+        rocket.x = 32;
+        rocket.y = 32;
+
+        stage.addChild(rocket);
+
+        gameLoop();
+        //Render the stage
+
+    }
+
+    function gameLoop(){
+
+        //Loop this function 60 times per second
+        requestAnimationFrame(gameLoop);
+
+        //Move the cat 1 pixel per frame
+        rocket.x += 1;
+
+        if (rocket.x > renderer.width){
+            rocket.x = -31;
+        }
+
+        //Render the stage
+        renderer.render(stage);
+    }
+
+</script>
+</body>
+</html>

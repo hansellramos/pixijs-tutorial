@@ -1,0 +1,17 @@
+{
+  "name": "pixijs-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "pixi.js": "^4.5.6"
+  },
+  "devDependencies": {
+    "local-web-server": "^2.2.4"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "ws"
+  },
+  "author": "",
+  "license": "ISC"
+}
