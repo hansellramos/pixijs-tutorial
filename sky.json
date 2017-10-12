@@ -1,0 +1,176 @@
+{
+  "frames": {
+    "sky_sequence_00.png": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 512,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_01.png": {
+      "frame": {
+        "x": 2,
+        "y": 183,
+        "w": 512,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_02.png": {
+      "frame": {
+        "x": 2,
+        "y": 364,
+        "w": 512,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_03.png": {
+      "frame": {
+        "x": 2,
+        "y": 545,
+        "w": 512,
+        "h": 174
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_04.png": {
+      "frame": {
+        "x": 2,
+        "y": 726,
+        "w": 512,
+        "h": 173
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_05.png": {
+      "frame": {
+        "x": 2,
+        "y": 906,
+        "w": 512,
+        "h": 172
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 3,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_06.png": {
+      "frame": {
+        "x": 2,
+        "y": 1088,
+        "w": 512,
+        "h": 178
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    },
+    "sky_sequence_07.png": {
+      "frame": {
+        "x": 2,
+        "y": 1269,
+        "w": 512,
+        "h": 178
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 512,
+        "h": 178
+      },
+      "sourceSize": {
+        "w": 512,
+        "h": 178
+      }
+    }
+  },
+  "meta": {
+    "app": "http://www.texturepacker.com",
+    "version": "1.0",
+    "image": "images/mario_sky.PNG",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:2f213a6b451f9f5719773418dfe80ae8$"
+  }
+}

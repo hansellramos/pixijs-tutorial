@@ -25,26 +25,49 @@
     renderer.backgroundColor = "0xffeeff";
     document.body.appendChild(renderer.view);
 
-    var rocket;
+    var rocket, sky;
+    var skyTexture;
 
     //load an image and run the `setup` function when it's done
     loader
-        .add("images/09.png")
+        .add([
+            "images/09.png",
+            "images/mario_sky.PNG",
+            "sky.json"
+        ])
         .load(setup);
 
     function setup() {
 
         var texture = PIXI.utils.TextureCache["images/09.png"];
+        var skyTexture = PIXI.utils.TextureCache["images/mario_sky.PNG"];
+        var skyRectangle = new PIXI.Rectangle(2, 726, 512, 174);
 
         var rectangle = new PIXI.Rectangle(96, 64, 32, 32);
 
         texture.frame = rectangle;
+        skyTexture.frame = skyRectangle;
+
+        var frames = [];
+        for (var i = 0; i <= 5; i++) {
+
+            frames.push(PIXI.Texture.fromFrame('sky_sequence_0' + i + '.png'));
+        }
+        var anim = new PIXI.extras.AnimatedSprite(frames);
+        anim.animationSpeed = 0.1;
+        anim.play();
+        stage.addChild(anim);
 
         rocket = new Sprite(texture);
+        sky = new Sprite(skyTexture);
 
         rocket.x = 32;
         rocket.y = 32;
 
+        sky.y = 200;
+        sky.height = 178;
+
+        stage.addChild(sky);
         stage.addChild(rocket);
 
         gameLoop();
